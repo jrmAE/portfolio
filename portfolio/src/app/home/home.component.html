@@ -1,8 +1,12 @@
-<div class="home-component">
+<mat-drawer-container class="home-component">
 
-
+  <!-- <mat-drawer-container class="example-container" autosize> -->
   <mat-toolbar color="primary">
-    <span>Joseph Meyer Sample Projects</span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+      (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Joe's Projects </span>
     <span class="toolbar-spacer"></span>
     <a href="https://linkedin.com/in/joseph-meyer-0854351ba" target="_blank" mat-flat-button color="accent"
       aria-label="linkedin page">
@@ -10,7 +14,20 @@
     </a>
   </mat-toolbar>
 
-  <mat-card class="info-card">
+
+
+  <mat-drawer #drawer class="port-sidenav" mode="over">
+    <mat-nav-list>
+      <a mat-list-item href="#angular" (click)="drawer.close()"> Angular & Typescript </a>
+      <a mat-list-item href="#assembly" (click)="drawer.close()"> Assembly </a>
+      <a mat-list-item href="#kotlin" (click)="drawer.close()"> Android (Kotlin) </a>
+      <a mat-list-item href="#java" (click)="drawer.close()"> Android (Java) </a>
+      <a mat-list-item href="#git" (click)="drawer.close()"> Java & Git/Gitub </a>
+    </mat-nav-list>
+
+  </mat-drawer>
+
+  <mat-card class="info-card" id="angular">
     <mat-card-title>Angular & Typescript</mat-card-title>
 
     <p class="info-text">This page is built with Android. Initially build on the Angular CLI v 13.
@@ -23,13 +40,13 @@
     <mat-card-actions class="mat-action-row">
       <a href="https://github.com/jrmAE/portfolio/tree/main/portfolio" target="_blank" mat-flat-button color="primary"
         class="btn-action" aria-label="Link to Github Repo for this web page.">
-        Assembly<mat-icon class="margin-left" svgIcon="github-circle"></mat-icon>
+        Angular<mat-icon class="margin-left" svgIcon="github-circle"></mat-icon>
       </a>
     </mat-card-actions>
 
   </mat-card>
 
-  <mat-card class="info-card">
+  <mat-card class="info-card" id="assembly">
     <mat-card-title>Assembly 6502 Practice</mat-card-title>
     <p class="info-text">This work is based on the <span class="ital">Making Games for the 2600</span> text by <span
         class="ital">Steven
@@ -40,7 +57,8 @@
 
     <p class="info-text">The contents of this repo are just for my projects and practice. Some of the late development
       of
-      games for the Atari 2600 fascinate me. Developing cohesive gaming experiences with 128 bytes of ram, 0 video ram,
+      games for the Atari 2600 fascinate me. Developing cohesive gaming experiences with 128 bytes of ram, 0 video
+      ram,
       and a limit
       of 4k (or so) makes for a impressive challenge to overcome. I maintain that the Double Dragon port for the Atari
       2600 is the
@@ -58,7 +76,7 @@
 
   </mat-card>
 
-  <mat-card class="info-card">
+  <mat-card class="info-card" id="java">
     <mat-card-title>Basic Java-based Android Samples</mat-card-title>
     <p class="info-text">This work contains samples that I use for an Android Development class that I teach.
       That class stresses the basics of the Android and assumes a entry-level familiarity with Java. We learn our
@@ -94,7 +112,7 @@
     </mat-card-actions>
   </mat-card>
 
-  <mat-card class="info-card">
+  <mat-card class="info-card" id="kotlin">
     <mat-card-title>An Intro to Kotlin</mat-card-title>
     <p class="info-text">This work contains samples that I use for an Android Development class that I teach.
       The class is 12 weeks long. For classes that move faster and can cover the critical development principles of
@@ -115,9 +133,10 @@
     </mat-card-actions>
   </mat-card>
 
-  <mat-card class="info-card">
+  <mat-card class="info-card" id="git">
     <mat-card-title>A way to learn git & github</mat-card-title>
-    <p class="info-text">This project is very old, and very dead. Most of my professional experience was (up until this
+    <p class="info-text">This project is very old, and very dead. Most of my professional experience was (up until
+      this
       point)
       using centralized version control systems, like ClearCase. I wanted to learn to use git and interface with git
       hub.
@@ -133,5 +152,5 @@
       </a>
     </mat-card-actions>
   </mat-card>
-
-</div>
+</mat-drawer-container>
+<!-- </div> -->
