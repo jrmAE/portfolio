@@ -1,6 +1,6 @@
 .home-component {
   width: 100%;
-  // background-image: url("/assets/atari_lightened.jpg");
+  background-image: url("/jrm533/assets/atari_lightened.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: left top;
@@ -28,11 +28,29 @@
     margin: 4px;
   }
 
+  .mat-action-row-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    align-items: end;
+    justify-content: end;
+    margin: 4px;
+  }
+
+  @media only screen and (max-width: 920px) {
+    .mat-action-row-grid {
+      grid-template-columns: auto;
+      gap: 12px;
+    }
+  }
+
   .margin-left {
     margin-left: 8px;
   }
 
   .btn-action {
     margin: 0 4px;
+    min-width: 150px;
+    max-width: 150px;
   }
 }
