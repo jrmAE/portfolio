@@ -20,6 +20,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/jrm533/",
+            "deployUrl": "/jrm533/",
             "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",

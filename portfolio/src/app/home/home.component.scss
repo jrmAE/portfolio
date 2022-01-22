@@ -1,6 +1,6 @@
 .home-component {
   width: 100%;
-  background-image: url("/assets/atari_lightened.jpg");
+  // background-image: url("/assets/atari_lightened.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: left top;
@@ -12,10 +12,6 @@
 
   .info-card {
     margin: 50px;
-  }
-
-  .info-bg {
-    background-image: url("/assets/atari_cropped.jpg");
   }
 
   .ital {

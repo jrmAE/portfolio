@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  mdiRegistry: '/jrm533/assets/mdi.svg',
+  assets: '/jrm533/assets',
 };
 
 /*

@@ -8,9 +8,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [
@@ -35,7 +37,7 @@ export class AppModule {
     domSanitizer: DomSanitizer
   ) {
     matIconRegistry.addSvgIconSet(
-      domSanitizer.bypassSecurityTrustResourceUrl('/assets/mdi.svg')
+      domSanitizer.bypassSecurityTrustResourceUrl(environment.mdiRegistry)
     ); // Or whatever path you placed mdi.svg at
   }
 }
