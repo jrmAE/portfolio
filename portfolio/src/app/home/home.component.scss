@@ -24,6 +24,7 @@ $light-primary: mat.define-palette(mat.$indigo-palette, 500);
     width: 100%;
     height: 250px;
     background-color: mat.get-color-from-palette(mat.$purple-palette, 300);
+    opacity: .9;
 
     .welcome-title {
       font-family: "Lucida Console", "Courier New", monospace;
