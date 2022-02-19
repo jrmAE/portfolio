@@ -23,6 +23,7 @@
       <a mat-list-item href="#java" (click)="drawer.close()"> Android (Java) </a>
       <a mat-list-item href="#git" (click)="drawer.close()"> Java & Git/Gitub </a>
       <a mat-list-item href="#cars" (click)="drawer.close()"> Restoration </a>
+      <a mat-list-item href="#unity" (click)="drawer.close()"> Unity </a>
     </mat-nav-list>
 
   </mat-drawer>
@@ -181,4 +182,28 @@
       </a>
     </mat-card-actions>
   </mat-card>
+
+  <mat-card class="info-card" id="unity">
+    <mat-card-title>Unity</mat-card-title>
+    <p class="info-text"> In 2022 I started working with Unity. Initially I focused on learning the environment and the
+      tools it provides. I'm building
+      in a linux environment and some of the setup has proved challenging there. This initial project is to
+      test a full project lifecycle: Starting from minor modifications and finishing with a published WebGl build.
+    </p>
+
+    <p class="info-text">There is nothing unique about this project. It is the demo 2d world sample provided by Unity.
+      It is modified slightly following their tutorials, then built using the WebGl platform and published to unity's
+      server. Unity provides an excellent suite of introductory videos to learn from and a set of projects to begin
+      with.</p>
+
+    <p class="info-text">I'm currently working on a 2d practice project to expand these skills a bit. </p>
+
+    <mat-card-actions class="mat-action-row">
+      <a href="https://play.unity.com/mg/other/web_gl_test_build-1" target="_blank" mat-flat-button color="primary"
+        class="btn-action" aria-label="Link to this published, generic unity game">
+        Unity Build 1<mat-icon class="margin-left" svgIcon="unity"></mat-icon>
+      </a>
+    </mat-card-actions>
+  </mat-card>
+
 </mat-drawer-container>
