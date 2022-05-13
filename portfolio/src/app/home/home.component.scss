@@ -60,6 +60,16 @@ $light-primary: mat.define-palette(mat.$indigo-palette, 500);
     font-style: italic
   }
 
+  .link-color {
+    text-decoration: none;
+    color: aqua;
+  }
+
+  .link-color:visited {
+    text-decoration: none;
+    color: aqua;
+  }
+
   .info-text {
     margin: 14px 0;
   }

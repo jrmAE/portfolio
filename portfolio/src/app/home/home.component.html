@@ -23,6 +23,7 @@
       <a mat-list-item href="#java" (click)="drawer.close()"> Android (Java) </a>
       <a mat-list-item href="#git" (click)="drawer.close()"> Java & Git/Gitub </a>
       <a mat-list-item href="#cars" (click)="drawer.close()"> Restoration </a>
+      <a mat-list-item href="#rust" (click)="drawer.close()"> Rust </a>
       <a mat-list-item href="#unity" (click)="drawer.close()"> Unity </a>
     </mat-nav-list>
 
@@ -183,9 +184,31 @@
     </mat-card-actions>
   </mat-card>
 
+  <mat-card class="info-card" id="rust">
+    <mat-card-title>Rust</mat-card-title>
+    <p class="info-text">
+      Rust is a language that I see references to frequently and that I hear colleagues talk about. Recently an update
+      to a favorite IDE included
+      several features to make Rust development easier. I decided it was time to figure out some of the basics.
+    </p>
+
+    <p class="info-text">The <a class="link-color ital" href="https://doc.rust-lang.org/book/" target="_blank">Rust
+        Book</a> is a great
+      tutorial. Definitely one of the most approachable I've found to starting a new language. This work is based on
+      that. </p>
+
+    <mat-card-actions class="mat-action-row">
+      <a href="https://github.com/jrmAE/GuessingGame" target="_blank" mat-flat-button color="primary" class="btn-action"
+        aria-label="A basic guessing game built in rust, from their demos">
+        Guessing Game<mat-icon class="margin-left" svgIcon="github-circle"></mat-icon>
+      </a>
+    </mat-card-actions>
+  </mat-card>
+
   <mat-card class="info-card" id="unity">
     <mat-card-title>Unity</mat-card-title>
-    <p class="info-text"> In 2022 I started working with Unity. Initially I focused on learning the environment and the
+    <p class="info-text"> I wanted to learn a bit about unity, and I decided a good way to do so was to start working
+      with Unity. Initially I focused on learning the environment and the
       tools it provides. I'm building
       in a linux environment and some of the setup has proved challenging there. This initial project is to
       test a full project lifecycle: Starting from minor modifications and finishing with a published WebGl build.
@@ -195,8 +218,6 @@
       It is modified slightly following their tutorials, then built using the WebGl platform and published to unity's
       server. Unity provides an excellent suite of introductory videos to learn from and a set of projects to begin
       with.</p>
-
-    <p class="info-text">I'm currently working on a 2d practice project to expand these skills a bit. </p>
 
     <mat-card-actions class="mat-action-row">
       <a href="https://play.unity.com/mg/other/web_gl_test_build-1" target="_blank" mat-flat-button color="primary"
